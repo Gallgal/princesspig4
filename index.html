@@ -26,7 +26,10 @@
 			text-align: center;
 			line-height: 95px;
 			border-radius: 50px;
-			border: 1px solid white;}
+			border: 1px solid white;
+			text-decoration: none;
+			color: white;
+			box-shadow: 0 0 4px white;}
 		a:hover{background: white; color: black;  box-shadow: 0px 0px 20px white;
 			transition: all 0.3s; border: none;}
 		section{padding: 100px;}
@@ -57,6 +60,10 @@
 		@keyframes ani{
 			from{ top: 50px; opacity: 0;}
 			to{ top: 0px; opacity: 1;}};
+		.glow{animation: glow 1.5s alternate infinite;}
+		@keyframes glow{
+			from{filter: invert(0%);}
+			to{filter: invert(100%);}}
 
 	</style>
 </head>
@@ -64,7 +71,8 @@
 <section class="black" style="padding-bottom: 0;">
 	<div class="row">
 		<div class="col-2">
-			<p>너는 "최악의 상황"을 막기 위해서 범인의 GPS를 역추적하고, 군대를 총 동원해 공주를 구출하는 방법을 모색하기로 했어. 일은 아주 순조롭게 흘러갔지.</p>
+			<p>일은 아주 일사천리로 순조롭게 풀려갔어.
+		<br>이대로라면 말이지.</p>
 		</div>
 		<div class="col-2"></div>
 	</div>
@@ -97,23 +105,20 @@
 		</div>
 	</div>
 	<div class="textalign-center" style=" background-image:'t.png' ;position: relative; z-index: 0;">
-		<img src="t.png" style="width: 90vw">
+		<img src="t.png" class="glow" style="width: 90vw">
 	</div>
 <section class="gradient" style=" z-index: 100; position: relative; top:-400px;">
-	<div class="row">
-		<div class="col-1 textalign-center serif" style="position:relative; top: 200px">
-		<h3>"총리님, 전화 받아보셔야 할 것 같습니다."</h3></div>
 	</div>
-	<img src="telephone.png" style="height: 110vh; position: absolute; right:0; opacity: 0.9;">
-	<div style="height: 100vh"></div>
+	<img src="telephone.png" style="height: 55vw; position: absolute; right:0; top: -5vh ; opacity: 0.9;">
+	<div style="height: 70vh"></div>
 	<div class="row">
 		<div class="col-1 serif">
-			<br><h3>"난 자네가 내 딸을 위해<br>어떠한 노력이라도 할 것이라 믿네."</h3>
+			<h3><i>“나일세. 내 딸을 위해서<br>그〔어떠한 노력〕도 해야 할 걸세.<br>자네 가족을 생각한다면 말이야.”</i></h3>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-1 textalign-center">
-			<br><br><br><br><br><p>아무래도, 우리에게 더이상의 선택권은 없는 것 같아.</p>
+			<br><br><br><br><br><p>아무래도, 우리에게 더이상 선택권은 없나봐.</p>
 		</div>
 	</div>
 <div class="row" style=" padding-bottom: 10px; ">
